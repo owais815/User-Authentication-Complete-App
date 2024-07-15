@@ -56,6 +56,4 @@ This project demonstrates how to create a complete login and signup system using
 ## Conclusion
 Contributions are welcome! Please feel free to submit a Pull Request.
 
----
 
-This content is now formatted properly for a `README.md` file using Markdown syntax.
