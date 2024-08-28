@@ -2,6 +2,10 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import { handleError, handleSuccess } from "../utils";
+import featureImage1 from "./images/feature-1.png";
+import featureImage2 from "./images/feature-2.png";
+import heroImg from "./images/hero.png";
+import logo from "./images/logo.svg";
 
 function Home() {
   const handleLogout = (e) => {
@@ -114,7 +118,7 @@ function Home() {
         <nav className="bg-white border-gray-200 py-2.5 dark:bg-gray-900">
             <div className="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
                 <a href="#" className="flex items-center">
-                    <img src="./images/logo.svg" className="h-6 mr-3 sm:h-9" alt="Owais Logo" />
+                    <img src={logo} className="h-6 mr-3 sm:h-9" alt="Owais Logo" />
                     <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">{loggedInUser}</span>
                 </a>
                 <div className="flex items-center lg:order-2">
@@ -196,7 +200,7 @@ function Home() {
             </div>
         </div>
         <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
-            <img src="/frontend/images/hero.png" alt="hero image"/>
+            <img src={heroImg} alt="hero image"/>
         </div> 
     </div>               
 </section>
@@ -309,11 +313,11 @@ function Home() {
     </div>
 </div>
 
-                <img className="hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex" src="/frontend/images/feature-1.png" alt="dashboard feature image"/>
+                <img className="hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex" src={featureImage1} alt="dashboard feature image"/>
             </div>
             {/* <!-- Row --> */}
             <div className="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
-                <img className="hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex" src="/frontend/images/feature-2.png" alt="feature image 2"/>
+                <img className="hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex" src={featureImage2} alt="feature image 2"/>
                 <div className="text-gray-500 sm:text-lg dark:text-gray-400">
                     <h2 className="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">We invest in the world’s potential</h2>
                     <p className="mb-8 font-light lg:text-xl">Deliver great service experiences fast - without the complexity of traditional ITSM solutions. Accelerate critical development work, eliminate toil, and deploy changes with ease.</p>
